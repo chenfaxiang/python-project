@@ -82,4 +82,3 @@ class Fib(object):
 
 for n in Fib():
     print n
-
