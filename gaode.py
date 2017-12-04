@@ -41,7 +41,7 @@ if __name__ == '__main__':
                 break
 
             for house in house_list:
-                house_title = house.select('.title > a')[0].text.encode('utf-8')
+                house_title = house.select('.title > a')[0].string.encode('utf-8')
                 house_addr = house.select('.address > .area > a')[-1].string.encode('utf-8')
                 house_price = house.select('.info > .price > .num')[0].string.encode('utf-8')
                 house_url = urljoin(ADDR, house.select('.title > a')[0]['href'])
