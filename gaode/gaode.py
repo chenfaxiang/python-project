@@ -48,4 +48,3 @@ if __name__ == '__main__':
                 csv_writer.writerow([house_title, house_addr, house_price, house_url])
 
         print('end............')
-

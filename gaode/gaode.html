@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>高德地图搜房</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.2&key=ee6c42f70ec96a8646347893534cda56"></script>
+    <style>
+      #container {
+        width:100%;
+        min-height: 650px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <script>
+      var map = new AMap.Map('container',{
+          zoom: 10,
+          center: [116.39,39.9] //new AMap.LngLat(116.39,39.9)
+      });
+    </script>
+  </body>
+</html>
