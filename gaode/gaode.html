@@ -18,9 +18,13 @@
 
     <script>
       var map = new AMap.Map('container',{
-          zoom: 10,
-          center: [116.39,39.9] //new AMap.LngLat(116.39,39.9)
+        resizeEnable: true,
+        zoomEnable: true,
+        zoom: 10,
+        center: [116.39,39.9] //new AMap.LngLat(116.39,39.9)
       });
+      var scale = new AMap.Scale();
+      map.addControl(scale);
     </script>
   </body>
 </html>
