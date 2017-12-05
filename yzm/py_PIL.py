@@ -46,7 +46,7 @@ for i in range(1000):
         # 定义要生成随机数的字母和数字
 font_list = list('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789')
 c_chars = ''.join(random.sample(font_list, 5))
-    # random.sample是在指定的列表中随机去除指定个元素
+    # random.sample是在指定的列表中随机取出指定个元素
     # 绘制字体
         # 先定制一下字体
 font = ImageFont.truetype('KohinoorBangla.ttc', 32)
@@ -68,7 +68,7 @@ parmas = [
 ]
 # 6. 使用滤镜
     # 添加滤镜
-imgFilter = img.transform((150, 50), Image.PERSPECTIVE, parmas)
+imgFilter = img.transform((100, 50), Image.PERSPECTIVE, parmas)
     # 参数一 扭曲范围
     # 参数二 扭曲样式
     # 参数三 扭曲参数
